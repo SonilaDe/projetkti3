@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+
+
+.actions a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.actions a:hover {
+    background-color: #45a049;
+}
+
+/* Form styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: 250px;
+    margin-top: -730px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.info {
+    margin-top: 60px;
+}
+
+.info img {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+}
+
+.info h1 {
+    text-align: start;
+    padding: 10px;
+}
+
+.info p {
+    color: #5a5858;
+    padding: 10px;
+}
+
+.info h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.info h4 {
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+
+    .actions {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    form {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .info h1 {
+        font-size: 1.5em;
+    }
+
+    .info p {
+        font-size: 1em;
+    }
+
+    .info h4 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 100px;
+    }
+
+    form {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .info h1 {
+        font-size: 1.2em;
+    }
+
+    .info p {
+        font-size: 0.9em;
+    }
+
+    .info h4 {
+        font-size: 1.2em;
+    }
+
+    .info img {
+        width: 100%;
+        height: auto;
+    }
+}
+.footer {
+    background-color: #111;
+    color: #b8c1ce;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 30px; 
+}
+
+        .social-media a i {
+            width: 40px;
+            margin-right: 10px;
+            color: #00c1b4;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .footer-links h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+        }
+
+        .footer-content div {
+            flex: 1;
+        }
+
+        h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .live-dot {
+            height: 8px;
+            width: 8px;
+            background-color: #00ff9b;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #ffffff;
+            padding-top: 10px;
+            font-size: 14px;
+            color: #bcd6f0;
+        }
+
+        .footer-bottom a {
+            color: #00c1b4;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        /*per tableta*/
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    .navbar .menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .info img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .form label, .form input, .form select, .form textarea {
+        width: 100%;
+    }
+
+    .footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .footer-links ul {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+    }
+
+    .navbar .menu ul {
+        display: flex;
+        gap: 20px;
+    }
+
+  
+
+
+    .info h1, .info p {
+        max-width: 45%;
+    }
+
+    .info img {
+        max-width: 40%;
+        height: auto;
+        margin-left: 20px;
+    }
+    .info p {
+    height: 50%; 
+    overflow: hidden; 
+}
+    form {
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    form label {
+        display: inline-block;
+        width: 25%;
+        margin-right: 10px;
+    }
+
+    form input, form select, form textarea {
+        width: 70%;
+        display: inline-block;
+    }
+
+    footer .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: left;
+    }
+
+    footer .footer-content div {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    footer .social-media {
+        text-align: center;
+        margin-top: 20px;
+    }}
+
+
+
+@media (min-width: 820px) and (max-width: 1180px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+    }
+
+    .navbar .menu ul {
+        display: flex;
+        gap: 20px;
+    }
+
+  
+.info{
+    display: none;
+}
+
+    
+    form {
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    form label {
+        display: inline-block;
+        width: 25%;
+        margin-right: 10px;
+    }
+
+    form input, form select, form textarea {
+        width: 70%;
+        display: inline-block;
+    }
+
+    footer .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: left;
+    }
+
+    footer .footer-content div {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    footer .social-media {
+        text-align: center;
+        margin-top: 20px;
+    }  
+
+
+
+}
+
+</style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+          <div class="logo">
+           <img src="logo2.jpg"  alt="Shopcart Logo">
+       
+          </div>
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="contactus.html">Contact us</a></li>
+          
+            </ul>
+          </nav>
+        
+          <div class="actions">
+          
+            <a href="Page3.html" class="btn">Cart</a>
+          </div>
+        </div>
+      </header>
+      <div class="info">
+        <h1>Talk to our product analyticts experts</h1>
+        <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hello,<br> feel free to reach out. Our team is always happy to assist you.</p>
+      <h4>Our office</h4>
+      <img src="staff.jpg">
+      <p>We're here to help! If you have any questions, need support, or just want to reach out,<br> you've come to the right place. Our team is ready to assist you with anything you need.</p>
+    <h5>Prishtinë</h5>
+    <p>1200 Franklin Mall # 524
+        Santa Clara CA 95052 USA</p>
+        <br>
+        <p>04452671718</p>
+       <h5>Lipjan</h5>
+       <p>1200 Franklin Mall # 524
+        Santa Clara CA 95052 USA</p>
+        <br>
+    </div>
+
+      <form>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+       
+        <label for="number">Number:</label>
+        <input type="text" id="number" name="number" required><br><br>
+
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="3" cols="50" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+
+
+
+
+      </form>
+  
+</body>
+</html>

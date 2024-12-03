@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.rating{
+   color: #00732f;
+}
+
+  .fotodiv img{
+width: 500px;
+height: 600px; 
+border-radius: 30px;
+margin-left: 90px;
+margin-top: 50px;
+}
+
+.tedhenat{
+    width: 700px;
+    height: 600px;
+  
+    margin-left: 690px;
+    margin-top:-599px;
+    border-radius: 30px;
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.tedhenat hr{
+    width: 70%;
+    margin-left: 30px;
+}
+
+.tedhenat h1{
+    font-size: 33px;
+}
+.counter-container {
+    display: flex;
+    
+    gap: 20px;
+    font-size: 2rem;
+    align-items: flex-start
+  }
+  
+  .counter {
+    min-width: 50px;
+    text-align: center;
+  }
+  .counter-container button {
+    font-size: 1rem; 
+    padding: 5px 10px; 
+    cursor: pointer;
+border-radius: 30px;
+ 
+    
+  }
+  .price {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  
+.btn1{
+  background-color: #173a26;
+  color: #f1f1f1;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  margin-left: -410px;
+  margin-top: 70px;
+  
+}
+
+.btn2{
+  background-color:transparent;
+  color: #173a26;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+
+  margin-top: 70px;
+}
+
+
+
+
+
+  i {
+    font-size: 15px;  
+}
+.ikonat p{
+    font-size: 15px;
+    display: inline-block;
+}
+.ikonat{
+ 
+   margin-top:20px;
+   gap: 20px;
+   color: #173a26;
+}
+
+.counter-container p{
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+#spam{
+  color: #a05e21;
+}
+
+.spamm{
+  font-size: 12px;
+color: #595e5b;
+margin-left: 30px;
+}
+
+
+
+
+
+.buy i:hover{
+ color: rgb(231, 90, 90);
+}
+
+
+
+@media (max-width: 600px)  {
+  .fotodiv {
+      width: 100%; 
+      margin-bottom: 1rem; 
+  }
+
+  .fotodiv img {
+      width: 90%; 
+      height: auto;
+      display: block;
+      margin-top: 150px;
+      margin: 0 auto; 
+  }
+
+  .tedhenat {
+    width: 80%;
+      padding: 1rem;
+      text-align: center; 
+      margin-top: 20%; 
+      margin-left: 10%;
+  }
+
+
+  .counter-container {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+      margin-bottom: 1rem;
+  }
+
+  .btn2{
+      width: 70%; 
+      margin: 0.3rem 0;
+
+  }
+
+  .ikonat {
+      padding: 1rem;
+      text-align: center;
+  }
+
+  .spamm {
+      font-size: 14px;
+  }
+  .btn1{
+    display: none;
+  }
+  .counter-container p{
+    display: none;
+  }
+
+}
+
+@media (min-width: 601px)  and (max-width: 1024px) {
+ 
+  .fotodiv {
+      width: 100%; 
+      margin-bottom: 1rem; 
+  }
+
+  .fotodiv img {
+    width: 70%; 
+      height: auto;
+      display: block;
+      
+
+  }
+
+  .tedhenat {
+    width: 80%;
+    padding: 1rem;
+    text-align: center; 
+    margin-top: 20%; 
+    margin-left: 10%;
+  }
+
+
+  .counter-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  .btn2{
+    width:100%;
+  }
+  .btn1 .btn2 {
+      width: 48%; /
+      margin: 0.5rem 0;
+  }
+
+  .ikonat {
+      padding: 1rem;
+      text-align: center;
+  }
+
+  .spamm {
+      font-size: 15px; 
+  }
+}

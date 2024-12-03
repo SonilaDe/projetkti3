@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Shopping Website</title>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+       <a href="index.html"><img src="logo2.jpg"  alt="Shopcart Logo"></a>
+   
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="contactus.html">Contact us</a></li>
+      
+        </ul>
+      </nav>
+    
+      <div class="actions">
+      
+        <a href="Page3.html" class="btn">Cart</a>
+      </div>
+    </div>
+
+     <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+    
+  <div class="container">
+ 
+      
+    <div class="product-grid">
+      <div class="product-card" data-category="Heels">
+      <a href="produkti1.html">  <img  id="displayImage" src="heels1.jpg" alt="Heels">
+        <h2>White pearl heels</h2></a>
+        <p>Chic, lightweight, breathable, supportive</p>
+        <div class="price">$23.00</div></a>
+        <div class="rating">★★★★★ (200)</div>
+        <button  onclick="saveImage()" class="add-to-cart">Add to Cart</button>
+      </div>
+
+  
+
+      
+      <div class="product-card" data-category="Heels">
+      <a href="produkti2.html">  <img src="heels3.jpg" alt="Heels">
+        <h2>Shoes</h2>
+        <p>Comfortable, stylish, durable, versatile </p>
+        <div class="price">$24.00</div>
+        <div class="rating">★★★★★ (200)</div></a>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+     
+      <div class="product-card" data-category="Heels">
+      <a href="produkti3.html">  <img src="heels4.jpg" alt="Heels">
+        <a href="produkti3.html"><h2>Shoes</h2>
+        <p>Sleek, premium, timeless, comfortable</p>
+        <div class="price">$45.00</div></a></a>
+        <div class="rating">★★★★★ (200)</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      
+      <div class="product-card" data-category="Heels">
+       <a href="produkti4.html"> <img src="heels5.jpg" alt="Heels">
+        <h2>Shoes</h2>
+        <p>Chic, lightweight, breathable, supportive</p>
+        <div class="price">$33.00</div></a>
+        <div class="rating">★★★★★ (200)</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+
+
+
+      <div class="product-card" data-category="Boots">
+       <a href="produkti5.html"> <img src="boots1.jpg" alt="Wired Headphones">
+        <h2>Shoes</h2>
+        <p>Trendy, cushioned, flexible, reliable</p>
+        <div class="price">$12.50</div></a>
+        <div class="rating">★★★★☆ (121)</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+     
+      <div class="product-card" data-category="Heels">
+        <a href="produkti6.html"><img src="heels2.jpg" alt="Heels">
+        <h2>Shoes</h2>
+        <p>Chic, lightweight, breathable, supportive</p>
+        <div class="price">$38.00</div></a>
+        <div class="rating">★★★★★ (200)</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+     
+
+                <div class="product-card" data-category="Boots">
+                  
+              <a href="produkti7.html"><img src="boots2.jpg" alt="Heels">
+                  <h2>Shoes</h2>
+                  <p>Stylish, practical, soft, resilient.</p>
+                  <div class="price">$59.00</div></a>
+                  <div class="rating">★★★★★ (200)</div>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                
+
+           
+                    <div class="product-card" data-category="Boots">
+                   <a href="produkti8.html">  <img src="boots3.jpg" alt="Heels">
+                      <h2>Shoes</h2>
+                      <p>Trendy, cushioned, flexible, reliable</p>
+                      <div class="price">$86.00</div></a> 
+                      <div class="rating">★★★★★ (200)</div>
+                      <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                
+                    <div class="product-card" data-category="Boots">
+                    <a href="produkti9.html">  <img src="boots4.jpg" alt="Heels">
+                      <h2>Shoes</h2>
+                      <p>Stylish, practical, soft, resilient.</p>
+                      <div class="price">$86.00</div></a>
+                      <div class="rating">★★★★★ (200)</div>
+                      <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+                        
+                  
+                                               
+                        <div class="product-card" data-category="Trainers">
+                       <a href="produkti10.html">  <img src="slippers5.jpg" alt="Heels">
+                         <h2>Shoes</h2>
+                         <p>Trendy, cushioned, flexible, reliable</p>
+                         <div class="price">$40.99</div></a> 
+                         <div class="rating">★★★★★ (200)</div>
+                          <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                            <div class="product-card" data-category="Boots">
+                              <a href="produkti11.html">   <img src="boots5.jpg" alt="Heels">
+                              <h2>Shoes</h2>
+                              <p>Fashionable, sturdy, lightweight, cushioned</p>
+                              <div class="price">$25.00</div></a> 
+                              <div class="rating">★★★★★ (200)</div>
+                              <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+
+
+                            <div class="product-card" data-category="Traniners">
+                              <a href="produkti12.html">  <img src="trainers4.jpg" alt="Wireless Earbuds">
+                              <h2>Shoes</h2>
+                              <p>Comfortable fit and portability</p>
+                              <div class="price">$24.00</div></a> 
+                              <div class="rating">★★★★☆ (150)</div>
+                              <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                      
+                      
+                         
+                              
+                      
+                        
+                                  <div class="product-card" data-category="Traniners">
+                                    <a href="produkti13.html"><img src="trainers1.jpg" alt="Heels">
+                                    <h2>Shoesx</h2>
+                                    <p>Trendy, cushioned, flexible, reliable</p>
+                                    <div class="price">$36.00</div></a>    
+                                    <div class="rating">★★★★★ (200)</div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                  </div>
+                      
+                                  
+                                      <div class="product-card" data-category="Trainers">
+                                        <a href="produkti14.html">     <img src="trainers2.jpg" alt="Heels">
+                                        <h2>Shoes</h2>
+                                        <p>High-fidelity audio</p>
+                                        <div class="price">$53.00</div></a>
+                                        <div class="rating">★★★★★ (200)</div>
+                                        <button class="add-to-cart">Add to Cart</button>
+ </div>
+                      
+                                     
+  <div class="product-card" data-category="Trainers">
+    <a href="produkti15.html"> <img src="trainers3.jpg" alt="Heels">
+<h2>Shoes</h2>
+<p>Fashionable, sturdy, lightweight, cushioned</p>
+<div class="price">$61.00</div></a>
+<div class="rating">★★★★★ (200)</div>
+ <button class="add-to-cart">Add to Cart</button>
+   </div>
+                      
+  
+                                           
+  <div class="product-card" data-category="Trainers">
+    <a href="produkti16.html"> <img src="trainers5.jpg" alt="Heels">
+   <h2>Shoes</h2>
+   <p>Chic, lightweight, breathable, supportive</p>
+   <div class="price">$6.00</div></a>
+   <div class="rating">★★★★★ (200)</div>
+    <button class="add-to-cart">Add to Cart</button>
+      </div>     
+   
+
+
+   <div class="product-card" data-category="Slippers">
+    <a href="produkti17.html"> <img src="slippers1.jpg" alt="slippers">
+<h2>Slippers</h2>
+<p>Comfy slippes</p>
+<div class="price">$9.0</div></a>
+<div class="rating">★★★★★ (200)</div>
+<button class="add-to-cart">Add to cart</button>
+   </div>
+
+   <div class="product-card" data-category="Slippers">
+    <a href="produkti18.html"><img src="slippers2.jpg" alt="slippers">
+    <h2>Slippers</h2>
+    <p>Comfy slippes</p>
+    <div class="price">$24.0</div></a> 
+    <div class="rating">★★★★★ (200)</div>
+    <button class="add-to-cart">Add to cart</button>
+       </div>
+
+       <div class="product-card" data-category="Slippers">
+        <a href="produkti19.html"> <img src="slippers3.jpg" alt="slippers">
+        <h2>Slippers</h2>
+        <p>Comfy slippes</p>
+        <div class="price">$8.0</div></a>
+        <div class="rating">★★★★★ (200)</div>
+        <button class="add-to-cart">Add to cart</button>
+           </div>
+
+           <div class="product-card" data-category="Slippers">
+            <a href="produkti20.html"> <img src="slippers4.jpg" alt="slippers">
+            <h2>Slippers</h2>
+            <p>Comfy slippes</p>
+            <div class="price">$7.0</div></a> 
+            <div class="rating">★★★★★ (200)</div>
+            <button class="add-to-cart">Add to cart</button>
+               </div>
+
+              
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+       
+
+
+           
+
+   
+              
+
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  
+
+
+
+
+const addToCart = () => {
+   
+    const productImage = document.querySelector('.fotodiv img').src; // Image URL
+    const productName = document.querySelector('.tedhenat h1').textContent; // Product name
+    const productPrice = parseFloat(document.getElementById('total').textContent); // Total price
+    const productQuantity = parseInt(document.getElementById('counter').textContent); // Quantity
+
+
+    const product = {
+      name: productName,
+      image: productImage,
+      price: productPrice,
+      quantity: productQuantity,
+    };
+
+ 
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+ 
+    cart.push(product);
+
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+
+    window.location.href = 'page2.html';
+  };
+
+
+  document.querySelector('.btn2').addEventListener('click', addToCart);
+
+
+
+
+  const saveImage = () => {
+    const imageElement = document.querySelector('.fotodiv img'); // Select the image
+    const imageUrl = imageElement.src; // Get the image URL
+    localStorage.setItem('savedImage', imageUrl); // Save the URL in local storage
+    window.location.href = 'page3.html'; // Redirect to the next page
+  };
+
+
+  document.querySelector('.btn2').addEventListener('click', saveImage);
+
+
+
+
+
+
+  
+
+
+ 
+  
+
+
+    const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('active'); 
+});
+
+</script>
+  
+</body>
+</html>
+
+

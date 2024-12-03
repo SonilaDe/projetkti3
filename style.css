@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .navbar {
+    width: 100%; 
+    background-color: #b0b6b3;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  .menu a:hover {
+color: rgb(58, 25, 25);
+  }
+  
+  .actions .btn {
+    background-color: #fff;
+    color: #00732f;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .actions .btn:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+.product-card a{
+  text-decoration: none;
+  color: #2a2b2a;
+}
+.header h1{
+  margin-bottom: 690px;
+}
+
+
+.filter-bar {
+position: fixed;
+  justify-content: center;  
+  align-items: center;  
+  z-index: 10;
+  gap: 10px; 
+  background-color: #fff;  
+  padding: 10px; 
+  border-bottom: 1px solid #ddd;  
+  margin-bottom: 20px;  
+  width: 100%;  
+}
+  
+  .filter-bar button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s;
+    margin-top: 50px;
+  }
+  
+  .filter-bar button:hover {
+    background-color: #757976;
+    color: white;
+  }
+  
+
+  .product-grid {
+    margin-top: 120px;  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  
+; 
+    justify-content: center;
+  }
+  
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+  }
+  .product-card {
+    flex: 0 1 calc(25% - 20px);  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eee;  
+  }
+
+  .product-card img {
+    height: 200px;
+    width: 300px;
+   margin-top: 50px;
+    max-width: 100%;
+    
+    margin: 0 auto; 
+    display: block;
+    margin-bottom: 10px;
+  }  
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+ 
+
+  .product-card img {
+    max-width: 100%;
+height: 350px;
+    margin-top: 20px; 
+    margin-bottom: 10px;
+  }
+  
+  .product-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00732f;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .rating {
+    font-size: 14px;
+    color: #f39c12;
+    margin-bottom: 15px;
+  }
+  
+  .product-card .add-to-cart {
+    background-color: #00732f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-card .add-to-cart:hover {
+    background-color: #005922;
+  }
+  
+ 
+  .product-card.hidden {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .product-grid {
+        justify-content: center; 
+    }
+
+    .product-card {
+        flex: 0 1 calc(50% - 20px); 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .product-grid {
+        justify-content: center; 
+    }
+
+    .product-card {
+        flex: 0 1 100%; 
+    }
+}
+
+
+
+.footer {
+  background-color: #111;
+  color: #b8c1ce;
+  padding: 80px 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+      .social-media a i {
+          width: 40px;
+          margin-right: 10px;
+          color: #00c1b4;
+      }
+
+      .footer-links {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+      }
+
+      .footer-links h3 {
+          font-size: 18px;
+          margin-bottom: 10px;
+      }
+
+      .footer-content {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 20px;
+      }
+
+      .footer-content div {
+          flex: 1;
+      }
+
+      h3 {
+          color: #ffffff;
+          margin-bottom: 15px;
+      }
+
+      ul {
+          list-style: none;
+          padding: 0;
+      }
+
+      ul li {
+          margin-bottom: 10px;
+      }
+
+      ul li a {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 16px;
+      }
+
+      ul li a:hover {
+          text-decoration: underline;
+      }
+
+      .live-dot {
+          height: 8px;
+          width: 8px;
+          background-color: #00ff9b;
+          border-radius: 50%;
+          display: inline-block;
+          margin-left: 5px;
+      }
+
+      .footer-bottom {
+          text-align: center;
+          border-top: 1px solid #ffffff;
+          padding-top: 10px;
+          font-size: 14px;
+          color: #bcd6f0;
+      }
+
+      .footer-bottom a {
+          color: #00c1b4;
+          text-decoration: none;
+      }
+
+      .footer-bottom a:hover {
+          text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      
+        .actions {
+          display: none;  
+        }
+      
+        .hamburger {
+          display: block; 
+        }
+      
+        .menu.active {
+          display: block; 
+        }
+      }
+
+      @media (min-width: 1024px){
+        .navbar{
+
+        
+        width: 100%; 
+        padding-left: 30px; 
+        padding-right: 30px
+      }
+      }
+      
+
+      .actions, .hamburger {
+        margin: 0 10px;
+        position: relative;
+        z-index: 10;
+      }
+      
+    

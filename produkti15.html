@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="produktet.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+    <div class="kryesori">
+      <header class="navbar">
+        <div class="container">
+          <div class="logo">
+           <a href="index.html"><img src="logo2.jpg"  alt="Shopcart Logo"></a>
+       
+          </div>
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="contactus.html">Contact us</a></li>
+          
+            </ul>
+          </nav>
+        
+          <div class="actions">
+          
+            <a href="Page3.html" class="btn">Cart</a>
+          </div>
+        </div>
+      </header>
+
+
+<div class="fotodiv">
+        <img src="trainers3.jpg"></div>
+
+        <div class="tedhenat">
+          
+<h1>White pearl heels</h1>
+<hr>
+<p>Experience the perfect blend of innovation and quality <br>designed to simplify your life and exceed your expectations.</p>
+
+<div class="rating">★★★★★ (200)</div>  
+<hr>
+
+
+<h2 class="price">Total :$<span id="total">61.00</span></h2>   
+<div class="counter-container">
+    <button id="decrement">-</button>
+    <div class="counter" id="counter">0</div>
+    <button id="increment">+</button>
+    <p>Only <spam id="spam">12 products</spam> left don't miss it!</p>
+
+
+<div class="buy">
+   
+    <button class="btn1">Buy now</button>
+   
+    <button class="btn2">Add to cart</button>
+    <i class="fa-solid fa-heart"></i></div>
+
+
+
+</div>
+
+    <div class="ikonat">
+        <i class="fa-solid fa-truck"></i><p>Free Delivery</p>
+        <br>
+        <spam class="spamm">Fast, reliable delivery—bringing your order to your doorstep right on time, every time</spam>
+        <br>
+        <br>
+        <i class="fa-regular fa-calendar"></i><p>Return Policy</p>
+        <br>
+        <spam class="spamm">Hassle-free returns: If you're not satisfied, return the product within 15 days for a full refund  </spam>
+    </div>
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script>
+   
+        const counterElement = document.getElementById('counter');
+          const totalElement = document.getElementById('total');
+          const incrementButton = document.getElementById('increment');
+          const decrementButton = document.getElementById('decrement');
+      
+        
+          let count = 1; 
+          const pricePerItem = 61;
+      
+          
+          const updateTotal = () => {
+            const total = count * pricePerItem;
+            totalElement.textContent = total.toFixed(2); 
+          };
+      
+       
+          incrementButton.addEventListener('click', () => {
+            count++;
+            counterElement.textContent = count;
+            updateTotal();
+          });
+      
+          decrementButton.addEventListener('click', () => {
+            if (count > 1) { 
+              count--;
+              counterElement.textContent = count;
+              updateTotal();
+            }
+          });
+
+
+
+          const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu ul');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+
+
+const addToCart = () => {
+  
+    const productImage = document.querySelector('.fotodiv img').src; // Image URL
+    const productName = document.querySelector('.tedhenat h1').textContent; // Product name
+    const productPrice = parseFloat(document.getElementById('total').textContent); // Total price
+    const productQuantity = parseInt(document.getElementById('counter').textContent); // Quantity
+
+ 
+    const product = {
+      name: productName,
+      image: productImage,
+      price: productPrice,
+      quantity: productQuantity,
+    };
+
+  
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
+    cart.push(product);
+
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+
+    alert(`${productName} has been added to the cart!`);
+  };
+
+
+  document.querySelector('.btn2').addEventListener('click', addToCart);
+            </script>
+</body>
+</html>
